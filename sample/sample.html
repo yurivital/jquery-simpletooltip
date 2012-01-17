@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jquery-simpletooltip</title>
+    <style type="text/css">
+        .tooltip
+        {
+            position: absolute;
+            z-index: 99999;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 5px;
+            width: 500px;
+            text-align: left;
+            display:none;
+        }</style>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-simpletooltip.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function () {
+
+              $('.more').simpleTooltip();
+          });
+      </script>
+
+</head>
+<body>
+    <div>
+        Voici un exemple d'utilisation du plugin jquery-simpletooltip
+        <br />
+        <img  id="flowers" alt="" src="img/flowers.jpg" width="300"/>
+        <br />
+        <span class="more" href="#explain" style="text-decoration:underline">Légende</span>
+        </div>
+    <div id="explain" class="tooltip">
+    <blockquote>
+   «  Viola est un genre de plantes herbacées vivaces de la famille des Violaceae. Selon le positionnement des pétales, les espèces sont appelées « violettes » ou « pensées ». Les violettes sont parfois appelées « herbes de la Trinité ». »
+    </blockquote>
+    Source : wikipedia 
+    </div>
+</body>
+</html>
